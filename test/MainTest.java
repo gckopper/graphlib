@@ -29,6 +29,20 @@ public class MainTest {
             new ArrayList<>(Arrays.asList(new Main.Edge(8, 2), new Main.Edge(3, 9))),
     };
 
+    static ArrayList<Main.Edge>[] adjListUndirectedWeightedTGB1 = new ArrayList[]{
+            new ArrayList<>(Arrays.asList(new Main.Edge(1, 3), new Main.Edge(2, 7), new Main.Edge(9, 10))),
+            new ArrayList<>(Arrays.asList(new Main.Edge(0, 3), new Main.Edge(3, 9), new Main.Edge(2, 11), new Main.Edge(4, 15))),
+            new ArrayList<>(Arrays.asList(new Main.Edge(3, 1), new Main.Edge(9, 6), new Main.Edge(0, 7), new Main.Edge(1, 11), new Main.Edge(5, 23))),
+            new ArrayList<>(Arrays.asList(new Main.Edge(2, 1), new Main.Edge(4, 5), new Main.Edge(1, 9), new Main.Edge(5, 13))),
+            new ArrayList<>(Arrays.asList(new Main.Edge(3, 5), new Main.Edge(1, 15), new Main.Edge(6, 17), new Main.Edge(7, 19), new Main.Edge(5, 21))),
+            new ArrayList<>(Arrays.asList(new Main.Edge(9, 8), new Main.Edge(10, 12), new Main.Edge(4, 21), new Main.Edge(2, 23), new Main.Edge(8, 33))),
+            new ArrayList<>(Arrays.asList(new Main.Edge(4, 17), new Main.Edge(7, 25), new Main.Edge(8, 27))),
+            new ArrayList<>(Arrays.asList(new Main.Edge(4, 19), new Main.Edge(6, 25), new Main.Edge(5, 29), new Main.Edge(8, 31))),
+            new ArrayList<>(Arrays.asList(new Main.Edge(10, 2), new Main.Edge(6, 27), new Main.Edge(7, 31), new Main.Edge(5, 33))),
+            new ArrayList<>(Arrays.asList(new Main.Edge(10, 4), new Main.Edge(2, 6), new Main.Edge(5, 8), new Main.Edge(0, 10))),
+            new ArrayList<>(Arrays.asList(new Main.Edge(8, 2), new Main.Edge(9, 4), new Main.Edge(5, 12)))
+    };
+
 
     @BeforeAll
     public static void convertToAdjList() {

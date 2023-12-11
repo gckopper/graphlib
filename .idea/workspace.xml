@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbab37d4-563c-4c82-95ea-d0b698869225" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dfs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Dijkstra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Prim.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/DijkstraTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/PrimTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/TestMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/PrimTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/PrimTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,12 +67,11 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PrimTest.prim">
-    <configuration name="DijkstraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PrimTest.primTGB1">
+    <configuration name="All in java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="DijkstraTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,16 +81,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DijkstraTest" />
       <option name="METHOD_NAME" value="dijkstra" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainTest.dijkstraTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="dijkstraTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -123,13 +106,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PrimTest.primTGB1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="PrimTest" />
+      <option name="METHOD_NAME" value="primTGB1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PrimTest.primTGB1" />
+        <item itemvalue="JUnit.All in java" />
         <item itemvalue="JUnit.PrimTest.prim" />
         <item itemvalue="JUnit.MainTest.toAdjListTest" />
         <item itemvalue="JUnit.DijkstraTest.dijkstra" />
-        <item itemvalue="JUnit.DijkstraTest" />
-        <item itemvalue="JUnit.MainTest.dijkstraTest" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +135,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702215442741</updated>
       <workItem from="1702215443754" duration="2154000" />
-      <workItem from="1702224639133" duration="15967000" />
+      <workItem from="1702224639133" duration="17399000" />
     </task>
     <servers />
   </component>
