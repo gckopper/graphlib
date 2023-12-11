@@ -114,7 +114,6 @@ public class Main {
         Stack<Integer> stack = new Stack<>();
         boolean[] visited = new boolean[adjList.length];
         stack.push(v);
-        int father = -1;
         while (!stack.isEmpty()) {
             int current = stack.pop();
             if (visited[current])
@@ -129,39 +128,5 @@ public class Main {
     }
     public record Edge(int d, int weight) {}
     public record Vert(int v, int distance) {}
-    public static int[] dijkstra(ArrayList<Edge>[] adjList, int v) {
-        PriorityQueue<Vert> pq = new PriorityQueue<>(Comparator.comparingInt(a -> a.distance));
-        boolean[] visited = new boolean[adjList.length];
-        int[] minDist = new int[adjList.length];
-        Arrays.fill(minDist, Integer.MAX_VALUE);
-        minDist[v] = 0;
-        pq.add(new Vert(v, 0));
-        while (!pq.isEmpty()) {
-            Vert current = pq.remove();
-            int currentDist = minDist[current.v];
 
-            if (visited[current.v])
-                continue;
-            visited[current.v] = true;
-            ArrayList<Edge> adj = adjList[current.v];
-
-            for (Edge edge : adj) {
-                if (visited[edge.d])
-                    continue;
-                int totalDistance = edge.weight + currentDist;
-                if (minDist[edge.d] == Integer.MAX_VALUE) {
-                    minDist[edge.d] = totalDistance;
-                    pq.add(new Vert(edge.d, minDist[edge.d]));
-                    continue;
-                }
-                if (minDist[edge.d] <= totalDistance) {
-                    continue;
-                }
-                pq.remove(new Vert(edge.d, minDist[edge.d]));
-                minDist[edge.d] = totalDistance;
-                pq.add(new Vert(edge.d, minDist[edge.d]));
-            }
-        }
-        return minDist;
-    }
 }
