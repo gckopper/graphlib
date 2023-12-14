@@ -1,5 +1,8 @@
+package Gabriel_;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+
+import Gabriel_.Dijkstra;
 
 import java.util.Arrays;
 

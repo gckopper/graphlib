@@ -1,10 +1,15 @@
+package Gabriel_;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
-
-public class Prim {
-    public static int[] prim(ArrayList<Main.Edge>[] adjList, int v) {
+public class Dijkstra {
+    /**
+     * @param adjList Adjacency list for weighted edges
+     * @param v Source for the algorithm
+     * @return Distance from source to each vertex
+     */
+    public static int[] dijkstra(ArrayList<Main.Edge>[] adjList, int v) {
         PriorityQueue<Main.Vert> pq = new PriorityQueue<>(Comparator.comparingInt(Main.Vert::distance));
         boolean[] visited = new boolean[adjList.length];
         int[] minDist = new int[adjList.length];
@@ -23,7 +28,7 @@ public class Prim {
             for (Main.Edge edge : adj) {
                 if (visited[edge.d()])
                     continue;
-                int totalDistance = edge.weight();
+                int totalDistance = edge.weight() + currentDist;
                 if (minDist[edge.d()] == Integer.MAX_VALUE) {
                     minDist[edge.d()] = totalDistance;
                     pq.add(new Main.Vert(edge.d(), minDist[edge.d()]));
@@ -40,7 +45,7 @@ public class Prim {
         return minDist;
     }
 
-    public static int[] prim(ArrayList<Main.Edge>[] adjList) {
-        return prim(adjList, 0);
+    public static int[] dijkstra(ArrayList<Main.Edge>[] adjList) {
+        return dijkstra(adjList, 0);
     }
 }
