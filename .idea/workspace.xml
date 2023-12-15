@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab37d4-563c-4c82-95ea-d0b698869225" name="Changes" comment="sagittarius a*">
+    <list default="true" id="bbab37d4-563c-4c82-95ea-d0b698869225" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test/Gabriel_/DfsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gabriel_/Dfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gabriel_/Dfs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gabriel_/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gabriel_/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gabriel_/Prim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gabriel_/Prim.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Gabriel_/AStarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Gabriel_/AStarTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Gabriel_/DijkstraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Gabriel_/DijkstraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Gabriel_/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Gabriel_/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,7 +70,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Gabriel_ in java">
+  <component name="RunManager" selected="JUnit.All in java">
     <configuration name="AStarTest.aStar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <extension name="coverage">
@@ -137,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in java" />
         <item itemvalue="JUnit.Gabriel_ in java" />
         <item itemvalue="JUnit.AStarTest.aStar" />
         <item itemvalue="JUnit.DijkstraTest.dijkstra (1)" />
         <item itemvalue="JUnit.PrimTest.primTGB1" />
-        <item itemvalue="JUnit.All in java" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +155,8 @@
       <updated>1702215442741</updated>
       <workItem from="1702215443754" duration="2154000" />
       <workItem from="1702224639133" duration="18686000" />
-      <workItem from="1702601562955" duration="3999000" />
+      <workItem from="1702601562955" duration="4137000" />
+      <workItem from="1702680455675" duration="681000" />
     </task>
     <task id="LOCAL-00001" summary="sagittarius a*">
       <option name="closed" value="true" />
@@ -165,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702605308944</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="minor code changes and fixes">
+      <option name="closed" value="true" />
+      <created>1702605601326</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1702605601327</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +193,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="sagittarius a*" />
-    <option name="LAST_COMMIT_MESSAGE" value="sagittarius a*" />
+    <MESSAGE value="minor code changes and fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor code changes and fixes" />
   </component>
 </project>

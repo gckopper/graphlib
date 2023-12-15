@@ -5,27 +5,6 @@ import java.util.*;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
 
-    public static void main(String[] args) {
-        // int[][] graph = {{1,7}, {0,2}, {1,3}, {2,4}, {3,5}, {4,6}, {5,7}, {6,0}};
-        int[][] graph = {{2,4,5}, {2,3}, {0,1,3,5}, {1,2}, {0,5}, {0,2,4}};
-        ArrayList<Integer>[] adjList = new ArrayList[graph.length];
-        for (int i = 0; i < graph.length; i++) {
-            adjList[i] = new ArrayList<>();
-            for (int j:
-                    graph[i]) {
-                adjList[i].add(j);
-            }
-        }
-
-        int[][] a = dfsSearch(adjList);
-        System.out.println(Arrays.toString(a[0]));
-        System.out.println(Arrays.toString(a[1]));
-        System.out.println("No recursion version");
-
-        int[] b = dfsSearchNoRecursion(adjList, 0);
-        System.out.println(Arrays.toString(b));
-    }
-
     public static ArrayList<Integer>[] toAdjList(int[][] edges, int countV) {
         ArrayList<Integer>[] result = new ArrayList[countV];
         for (int i = 0; i < result.length; i++) {
@@ -65,47 +44,6 @@ public class Main {
             edgeArrayList.sort(Comparator.comparingInt(a -> a.weight));
         }
         return result;
-    }
-    public static int[][] dfsSearch(ArrayList<Integer>[] adjList) {
-        return  dfsSearch(adjList, 0);
-    }
-
-    public static int[][] dfsSearch(ArrayList<Integer>[] adjList, int v) {
-        int[][] result = new int[2][adjList.length];
-        dfsSearch(adjList, v, 1, result[0], result[1]);
-        return result;
-    }
-    // Recursive version
-    public static int dfsSearch(ArrayList<Integer>[] adjList, int v, int i, int[] d, int[] f) {
-        d[v] = i;
-        i++;
-        for (int w : adjList[v]) {
-            if (d[w] == 0) {
-                i = dfsSearch(adjList, w, i, d, f);
-            }
-        }
-        f[v] = i;
-        i++;
-        return i;
-    }
-
-    public static int[] dfsSearchNoRecursion(ArrayList<Integer>[] adjList, int v) {
-        Stack<Integer> stack = new Stack<>();
-        int[] d = new int[adjList.length];
-        int i = 1;
-        stack.push(v);
-        while (!stack.isEmpty()) {
-            int current = stack.pop();
-            if (d[current] != 0)
-                continue;
-            d[current] = i;
-            i++;
-            for (int j = adjList[current].size() - 1; j >= 0; j--) {
-                if (d[adjList[current].get(j)] == 0)
-                    stack.push(adjList[current].get(j));
-            }
-        }
-        return d;
     }
 
     public static boolean isCyclic(ArrayList<Integer>[] adjList) {
