@@ -17,6 +17,10 @@ public class Main {
             }
         }
 
+        AStar.Heuristic abacate = (v, e) -> {
+            return graph[0][v] + graph[0][e];
+        };
+
         int[][] a = dfsSearch(adjList);
         System.out.println(Arrays.toString(a[0]));
         System.out.println(Arrays.toString(a[1]));
