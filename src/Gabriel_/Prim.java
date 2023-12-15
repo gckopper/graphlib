@@ -14,7 +14,6 @@ public class Prim {
         pq.add(new Main.Vert(v, 0));
         while (!pq.isEmpty()) {
             Main.Vert current = pq.remove();
-            int currentDist = minDist[current.v()];
 
             if (visited[current.v()])
                 continue;

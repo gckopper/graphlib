@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab37d4-563c-4c82-95ea-d0b698869225" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Gabriel_/AStar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Gabriel_/AStarTest.java" afterDir="false" />
+    <list default="true" id="bbab37d4-563c-4c82-95ea-d0b698869225" name="Changes" comment="sagittarius a*">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gabriel_/Dijkstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gabriel_/Dijkstra.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gabriel_/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gabriel_/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gabriel_/Prim.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gabriel_/Prim.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Gabriel_/AStarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Gabriel_/AStarTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Gabriel_/DijkstraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Gabriel_/DijkstraTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AStarTest.aStar">
+  <component name="RunManager" selected="JUnit.Gabriel_ in java">
     <configuration name="AStarTest.aStar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <extension name="coverage">
@@ -111,12 +111,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrimTest.prim" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Gabriel_ in java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="PrimTest" />
-      <option name="METHOD_NAME" value="prim" />
-      <option name="TEST_OBJECT" value="method" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Gabriel_.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Gabriel_" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Gabriel_ in java" />
         <item itemvalue="JUnit.AStarTest.aStar" />
         <item itemvalue="JUnit.DijkstraTest.dijkstra (1)" />
         <item itemvalue="JUnit.PrimTest.primTGB1" />
         <item itemvalue="JUnit.All in java" />
-        <item itemvalue="JUnit.PrimTest.prim" />
       </list>
     </recent_temporary>
   </component>
@@ -151,8 +155,17 @@
       <updated>1702215442741</updated>
       <workItem from="1702215443754" duration="2154000" />
       <workItem from="1702224639133" duration="18686000" />
-      <workItem from="1702601562955" duration="3558000" />
+      <workItem from="1702601562955" duration="3999000" />
     </task>
+    <task id="LOCAL-00001" summary="sagittarius a*">
+      <option name="closed" value="true" />
+      <created>1702605308944</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702605308944</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,5 +181,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sagittarius a*" />
+    <option name="LAST_COMMIT_MESSAGE" value="sagittarius a*" />
   </component>
 </project>

@@ -10,16 +10,12 @@ public class Main {
         int[][] graph = {{2,4,5}, {2,3}, {0,1,3,5}, {1,2}, {0,5}, {0,2,4}};
         ArrayList<Integer>[] adjList = new ArrayList[graph.length];
         for (int i = 0; i < graph.length; i++) {
-            adjList[i] = new ArrayList<Integer>();
+            adjList[i] = new ArrayList<>();
             for (int j:
                     graph[i]) {
                 adjList[i].add(j);
             }
         }
-
-        AStar.Heuristic abacate = (v, e) -> {
-            return graph[0][v] + graph[0][e];
-        };
 
         int[][] a = dfsSearch(adjList);
         System.out.println(Arrays.toString(a[0]));
@@ -76,7 +72,7 @@ public class Main {
 
     public static int[][] dfsSearch(ArrayList<Integer>[] adjList, int v) {
         int[][] result = new int[2][adjList.length];
-        dfsSearch(adjList, 0, 1, result[0], result[1]);
+        dfsSearch(adjList, v, 1, result[0], result[1]);
         return result;
     }
     // Recursive version
