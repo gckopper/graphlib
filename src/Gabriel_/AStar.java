@@ -10,6 +10,7 @@ public class AStar {
      * @param adjList Adjacency list for weighted edges
      * @param v Source for the algorithm
      * @param w Destination vertex
+     * @param h Function that calculates the heuristic
      * @return Distance from source to each vertex
      */
     public static int aStar(ArrayList<Main.Edge>[] adjList, int v, int w, Heuristic h) {
