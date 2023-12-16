@@ -18,4 +18,17 @@ class AStarTest {
                 (a,b) -> Math.abs(map[a][0] - map[b][0]) + Math.abs(map[a][1] - map[b][1]));
         assertEquals(17, result);
     }
+
+    boolean[][] test = {
+            {true,  true,  true,  true,  false, true,  true,  true},
+            {true,  true,  true,  true,  true,  true,  false, true},
+            {false, false, false, false, false, false, true,  true},
+            {false, true,  true,  true,  true,  true,  true,  true}
+    };
+
+    @Test
+    void aStarWeightlessGrid() {
+        int result = AStar.aStar(test, 0, 0, 7,3);
+        assertEquals(12, result);
+    }
 }

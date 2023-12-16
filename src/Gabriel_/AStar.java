@@ -51,4 +51,53 @@ public class AStar {
     public interface Heuristic {
         int heuristic(int fin, int b);
     }
+
+    public record Vert(int x, int y, int distance) {}
+
+    private static  Vert[] summer = {
+            new Vert(0,1, 0),
+            new Vert(1,0, 0),
+            new Vert(-1,0, 0),
+            new Vert(0,-1, 0)};
+    public static int aStar(boolean[][] graph, int vX, int vY, int wX, int wY) {
+        PriorityQueue<Vert> pq = new PriorityQueue<>(Comparator.comparingInt(Vert::distance));
+        boolean[][] visited = new boolean[graph.length][graph[0].length];
+        int[][] minDist = new int[graph.length][graph[0].length];
+        int[][] ancestor = new int[graph.length][graph[0].length];
+        for (int i = 0; i <graph.length; i++) {
+            Arrays.fill(minDist[i], Integer.MAX_VALUE);
+        }
+
+        minDist[vY][vX] = 0;
+        pq.add(new Vert(vX, vY, 0));
+        while (!pq.isEmpty()) {
+            Vert current = pq.remove();
+            int currentDist = minDist[current.y][current.x] + 1;
+            if (current.x == wX && current.y == wY) {
+                return minDist[wY][wX];
+            }
+            visited[current.y][current.x] = true;
+
+            for (Vert vert : summer) {
+                int x = current.x + vert.x;
+                int y = current.y + vert.y;
+                if (x >= graph[0].length || y >= graph.length || x < 0 || y < 0)
+                    continue;
+                if (visited[y][x] || !graph[y][x])
+                    continue;
+
+                if (minDist[y][x] <= currentDist) {
+                    continue;
+                }
+                int heu = (wX - x)*(wX - x) + (wY - y)*(wY - y);
+                if (minDist[y][x] != Integer.MAX_VALUE) {
+                    pq.remove(new Vert(x, y, minDist[y][x] + heu));
+                }
+                minDist[y][x] = currentDist;
+                pq.add(new Vert(x, y, minDist[y][x] + heu));
+            }
+
+        }
+        return Integer.MAX_VALUE;
+    }
 }

@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab37d4-563c-4c82-95ea-d0b698869225" name="Changes" comment="bfs!">
+    <list default="true" id="bbab37d4-563c-4c82-95ea-d0b698869225" name="Changes" comment="fix missing javadoc param">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gabriel_/AStar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gabriel_/AStar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Gabriel_/AStarTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Gabriel_/AStarTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,11 +69,19 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Gabriel_ in java">
-    <configuration name="All in java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AStarTest.aStarWeightlessGrid">
+    <configuration name="AStarTest.aStarWeightlessGrid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Gabriel_.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Gabriel_" />
+      <option name="MAIN_CLASS_NAME" value="Gabriel_.AStarTest" />
+      <option name="METHOD_NAME" value="aStarWeightlessGrid" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AStarTest.aStarWeightlessGrid" />
         <item itemvalue="JUnit.Gabriel_ in java" />
         <item itemvalue="JUnit.BfsTest.bfs" />
         <item itemvalue="JUnit.BfsTest" />
         <item itemvalue="JUnit.CycleDetectorTest.isCyclicTest" />
-        <item itemvalue="JUnit.All in java" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +168,8 @@
       <workItem from="1702215443754" duration="2154000" />
       <workItem from="1702224639133" duration="18686000" />
       <workItem from="1702601562955" duration="4137000" />
-      <workItem from="1702680455675" duration="4794000" />
+      <workItem from="1702680455675" duration="8609000" />
+      <workItem from="1702742188197" duration="3163000" />
     </task>
     <task id="LOCAL-00001" summary="sagittarius a*">
       <option name="closed" value="true" />
@@ -200,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702695027169</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix missing javadoc param">
+      <option name="closed" value="true" />
+      <created>1702696140406</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702696140406</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +242,7 @@
     <MESSAGE value="decoupled dfs from main" />
     <MESSAGE value="decoupled CycleDetector from main" />
     <MESSAGE value="bfs!" />
-    <option name="LAST_COMMIT_MESSAGE" value="bfs!" />
+    <MESSAGE value="fix missing javadoc param" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix missing javadoc param" />
   </component>
 </project>
