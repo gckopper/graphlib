@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbab37d4-563c-4c82-95ea-d0b698869225" name="Changes" comment="decoupled dfs from main">
-      <change afterPath="$PROJECT_DIR$/src/Gabriel_/CycleDetector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/Gabriel_/CycleDetectorTest.java" afterDir="false" />
+    <list default="true" id="bbab37d4-563c-4c82-95ea-d0b698869225" name="Changes" comment="decoupled CycleDetector from main">
+      <change afterPath="$PROJECT_DIR$/src/Gabriel_/Bfs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Gabriel_/BfsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Gabriel_/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gabriel_/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Gabriel_/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/Gabriel_/MainTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -70,8 +68,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CycleDetectorTest.isCyclicTest">
-    <configuration name="AStarTest.aStar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BfsTest.bfs">
+    <configuration name="All in java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BfsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <extension name="coverage">
         <pattern>
@@ -80,17 +86,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Gabriel_" />
-      <option name="MAIN_CLASS_NAME" value="Gabriel_.AStarTest" />
-      <option name="METHOD_NAME" value="aStar" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="Gabriel_.BfsTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BfsTest.bfs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Gabriel_.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Gabriel_" />
+      <option name="MAIN_CLASS_NAME" value="Gabriel_.BfsTest" />
+      <option name="METHOD_NAME" value="bfs" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,22 +119,6 @@
       <option name="PACKAGE_NAME" value="Gabriel_" />
       <option name="MAIN_CLASS_NAME" value="Gabriel_.CycleDetectorTest" />
       <option name="METHOD_NAME" value="isCyclicTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DijkstraTest.dijkstra (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Gabriel_.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Gabriel_" />
-      <option name="MAIN_CLASS_NAME" value="Gabriel_.DijkstraTest" />
-      <option name="METHOD_NAME" value="dijkstra" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BfsTest.bfs" />
+        <item itemvalue="JUnit.BfsTest" />
+        <item itemvalue="JUnit.Gabriel_ in java" />
         <item itemvalue="JUnit.CycleDetectorTest.isCyclicTest" />
         <item itemvalue="JUnit.All in java" />
-        <item itemvalue="JUnit.Gabriel_ in java" />
-        <item itemvalue="JUnit.AStarTest.aStar" />
-        <item itemvalue="JUnit.DijkstraTest.dijkstra (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +159,7 @@
       <workItem from="1702215443754" duration="2154000" />
       <workItem from="1702224639133" duration="18686000" />
       <workItem from="1702601562955" duration="4137000" />
-      <workItem from="1702680455675" duration="814000" />
+      <workItem from="1702680455675" duration="3581000" />
     </task>
     <task id="LOCAL-00001" summary="sagittarius a*">
       <option name="closed" value="true" />
@@ -188,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702681153982</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="decoupled CycleDetector from main">
+      <option name="closed" value="true" />
+      <created>1702681357021</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702681357021</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,6 +214,7 @@
     <MESSAGE value="sagittarius a*" />
     <MESSAGE value="minor code changes and fixes" />
     <MESSAGE value="decoupled dfs from main" />
-    <option name="LAST_COMMIT_MESSAGE" value="decoupled dfs from main" />
+    <MESSAGE value="decoupled CycleDetector from main" />
+    <option name="LAST_COMMIT_MESSAGE" value="decoupled CycleDetector from main" />
   </component>
 </project>
